@@ -1,0 +1,184 @@
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: hsl(180, 90%, 15%);
+    margin: 1vw;
+    padding: 0 1vw 0 1vw;
+  }
+  body {
+    margin: calc(0px + .3vw);
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+  }
+  hr {
+    height: .3vw;
+    border-width: 0;
+    margin: 0;
+    background-color: #ffe582 !important;
+  }
+  img {
+    max-width: 10vw;
+    margin: 0 !important;
+  }
+  div {
+    display: inline;
+  }
+  .navbar {
+    grid-area: navbar;
+  }
+  .header {
+		grid-area: header;
+	}
+  .sidebar {
+		grid-area: sidebar;
+	}
+  .content {
+		grid-area: content;
+	}
+	.sidebar2 {
+		grid-area: sidebar2;
+	}
+	.footer {
+		grid-area: footer;
+	}
+  .wrapper {
+    background-color: #fff;
+    color: #444;
+    display: grid;
+    grid-gap: .3vw;
+    grid-template-areas:
+     "navbar"
+     "header"
+     "sidebar"
+     "content"
+     "sidebar2"
+     "footer"
+  }
+  .videoOnScreenMobile {
+    display: block;
+  }
+  .videoOnScreenWide {
+    display: none;
+  }
+	@media only screen and (min-width: 700px) and (max-width: 899px) {
+    .videoOnScreenMobile {
+      display: unset;
+      display: none;
+    }
+    .videoOnScreenWide {
+      display: block;
+    }
+	.wrapper {
+		grid-template-columns: 15vw 1fr;
+		grid-template-areas:
+    "navbar   navbar"
+    "header   header"
+		"sidebar  content"
+		"sidebar2 sidebar2"
+		"footer   footer";
+    }
+	}
+	@media only screen and (min-width: 900px)   {
+    .videoOnScreenMobile {
+      display: unset;
+      display: none;
+    }
+    .videoOnScreenWide {
+      display: block;
+    }
+		.wrapper {
+			grid-template-columns: 15vw 3fr 1fr;
+			grid-template-areas:
+      "navbar  navbar  navbar"
+      "header  header  header"
+			"sidebar content sidebar2"
+			"footer  footer  footer";
+		}
+	}
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: .3vw;
+  padding: .2vw;
+}
+.navbar {
+  background-color: white;
+  font-weight: bold;
+  font-style: normal;
+  font-size: calc(16px + 1.6vw);
+  text-align: center;
+}
+.navbar a:hover:not(.active) {
+  background-color: #ddd;
+}
+.navbar a.active {
+  color: white;
+  background-color: #6d6e70;
+}
+#logoLine {
+  font-size: calc(14px + 1.8vw) !important;
+  font-style: normal;
+  display: inline;
+  float: right;
+  padding-right: 1.2vw;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+#logo {
+  display: flex;
+  float: right;
+  font-size: 1.8vw;
+  margin-top: .4vw;
+}
+.header {
+  border-top: 5px solid hsl(180, 90%, 19%);
+  font-size: 2.5vw !important;
+  font-style: italic;
+  background-color: #ccc;
+  color: #444;
+  height: 3vw;
+  padding: 0vw .6vw .5vw .4vw !important;
+}
+.sidebar {
+  background-color: white;
+  /* background-color: hsl(180, 90%, 19%); */
+  color: #fff;
+  display: run-in;
+  font-size: 1.8vw !important;
+}
+.content {
+  background: grey;
+  text-align: center;
+}
+.sidebar2 {
+  background-color: white;
+}
+.footer {
+  text-align: center;
+  color: #444;
+  background-color: HSL(48, 100%, 70%);
+  font-size: 2vw !important;
+}
+.equityLogo {
+  color: white;
+  font-size: 2.2vw;
+  font-weight: lighter;
+  font-family: serif;
+}
+textarea {
+  padding: 1.5vw 0vw 0vw 2.9vw;
+  /* border: 10vw !important; */
+  margin: 0;
+  height: 5%;
+  width: 80%;
+  font-size: 1.5vw;
+}
+button {
+  height: 5vw !important;
+  width: 40%;
+  border-radius: 1vw;
+  font-size: 1.5vw;
+}
