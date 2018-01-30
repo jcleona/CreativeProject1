@@ -46,14 +46,14 @@
     background-color: #fff;
     color: #444;
     display: grid;
-    grid-gap: .3vw;
+    grid-gap: .2vw;
     grid-template-areas:
      "navbar"
      "header"
      "sidebar"
      "content"
      "sidebar2"
-     "footer"
+     "footer";
   }
   .videoOnScreenMobile {
     display: block;
@@ -61,7 +61,25 @@
   .videoOnScreenWide {
     display: none;
   }
-	@media only screen and (min-width: 700px) and (max-width: 899px) {
+  @media only screen and (min-width: 550px) and (max-width: 649px) {
+    .videoOnScreenMobile {
+      display: unset;
+      display: none;
+    }
+    .videoOnScreenWide {
+      display: block;
+    }
+  .wrapper {
+    grid-template-areas:
+    "navbar"
+    "header"
+    "sidebar"
+    "content"
+    "sidebar2"
+    "footer";
+    }
+  }
+	@media only screen and (min-width: 650px) and (max-width: 899px) {
     .videoOnScreenMobile {
       display: unset;
       display: none;
@@ -70,16 +88,16 @@
       display: block;
     }
 	.wrapper {
-		grid-template-columns: 15vw 1fr;
+		grid-template-columns: 1fr 5fr;
 		grid-template-areas:
     "navbar   navbar"
     "header   header"
 		"sidebar  content"
-		"sidebar2 sidebar2"
+		"sidebar  sidebar2"
 		"footer   footer";
     }
 	}
-	@media only screen and (min-width: 900px)   {
+	@media only screen and (min-width: 800px)   {
     .videoOnScreenMobile {
       display: unset;
       display: none;
@@ -88,7 +106,7 @@
       display: block;
     }
 		.wrapper {
-			grid-template-columns: 1fr 4fr 1fr;
+			grid-template-columns: 1fr 5fr 1fr;
 			grid-template-areas:
       "navbar  navbar  navbar"
       "header  header  header"
@@ -99,14 +117,14 @@
 .box {
   background-color: #444;
   color: #fff;
-  border-radius: .3vw;
+  border-radius: .2vw;
   padding: .4vw;
 }
 .navbar {
   background-color: white;
   font-weight: bold;
   font-style: normal;
-  font-size: calc(16px + 1.6vw);
+  font-size: calc(14px + 1.6vw);
   text-align: center;
 }
 .navbar a:hover:not(.active) {
@@ -152,18 +170,24 @@
 }
 .content {
   background: grey;
-  text-align: center;
+  padding: 4vw;
+  font-size: calc(9px + 1.5vw);
 }
 .sidebar2 {
   background-color: white;
   text-align: center;
   color: hsl(180, 90%, 19%);
+  font-size: calc(7.5px + 1.4vw);
+  padding: 4vh 1vh 1vh 1vh;
 }
 .footer {
   text-align: center;
+  align-self: stretch;
+  align-items: stretch;
   color: #444;
   background-color: HSL(48, 100%, 70%);
-  font-size: calc(14px + 1vw);
+  font-size: calc(7px + 1.3vw);
+  font-family: sans-serif;
 }
 .equityLogo {
   color: white;
