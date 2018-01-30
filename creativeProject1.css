@@ -7,7 +7,7 @@
     padding: 0 1vw 0 1vw;
   }
   body {
-    margin: calc(0px + .3vw);
+    margin: .3vw;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 300;
   }
@@ -18,7 +18,7 @@
     background-color: #ffe582 !important;
   }
   img {
-    max-width: 10vw;
+    max-width: calc(65px + 3.4vw);
     margin: 0 !important;
   }
   div {
@@ -88,7 +88,7 @@
       display: block;
     }
 		.wrapper {
-			grid-template-columns: 15vw 3fr 1fr;
+			grid-template-columns: 1fr 4fr 1fr;
 			grid-template-areas:
       "navbar  navbar  navbar"
       "header  header  header"
@@ -100,7 +100,7 @@
   background-color: #444;
   color: #fff;
   border-radius: .3vw;
-  padding: .2vw;
+  padding: .4vw;
 }
 .navbar {
   background-color: white;
@@ -130,17 +130,18 @@
 #logo {
   display: flex;
   float: right;
-  font-size: 1.8vw;
+  font-size: calc(14px + .9vw);
   margin-top: .4vw;
 }
 .header {
   border-top: 5px solid hsl(180, 90%, 19%);
-  font-size: 2.5vw !important;
+  /* font-size: 2.5vw !important; */
+  font-size: calc(16px + 1vw);
   font-style: italic;
   background-color: #ccc;
   color: #444;
-  height: 3vw;
-  padding: 0vw .6vw .5vw .4vw !important;
+  height: calc(10px +3vw);
+  padding: 0vw .6vw .4vw .4vw !important;
 }
 .sidebar {
   background-color: white;
@@ -155,12 +156,14 @@
 }
 .sidebar2 {
   background-color: white;
+  text-align: center;
+  color: hsl(180, 90%, 19%);
 }
 .footer {
   text-align: center;
   color: #444;
   background-color: HSL(48, 100%, 70%);
-  font-size: 2vw !important;
+  font-size: calc(14px + 1vw);
 }
 .equityLogo {
   color: white;
@@ -172,8 +175,9 @@ textarea {
   padding: 1.5vw 0vw 0vw 2.9vw;
   /* border: 10vw !important; */
   margin: 0;
-  height: 5%;
+  height: 4%;
   width: 80%;
+  resize: none;
   font-size: 1.5vw;
 }
 button {
@@ -181,4 +185,7 @@ button {
   width: 40%;
   border-radius: 1vw;
   font-size: 1.5vw;
+}
+#git {
+  max-width: 2vw;
 }
