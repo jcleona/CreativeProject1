@@ -15,11 +15,11 @@
     height: .3vw;
     border-width: 0;
     margin: 0;
-    background-color: #ffe582 !important;
+    background-color: #ffe582;
   }
   img {
     max-width: calc(65px + 3.4vw);
-    margin: 0 !important;
+    margin: 0;
   }
   div {
     display: inline;
@@ -135,7 +135,7 @@
   background-color: #6d6e70;
 }
 #logoLine {
-  font-size: calc(14px + 1.8vw) !important;
+  font-size: calc(14px + 1.8vw);
   font-style: normal;
   display: inline;
   float: right;
@@ -153,19 +153,15 @@
 }
 .header {
   border-top: 5px solid hsl(180, 90%, 19%);
-  /* font-size: 2.5vw !important; */
   font-size: calc(16px + 1vw);
   font-style: italic;
   background-color: #ccc;
   color: #444;
   height: calc(10px +3vw);
-  padding: 0vw .8vw .4vw .4vw !important;
+  padding: 0vw .8vw .1vw .4vw;
 }
 .sidebar {
   background-color: white;
-  color: #fff;
-  display: run-in;
-  font-size: 1.8vw !important;
 }
 .content {
   background: grey;
@@ -181,8 +177,6 @@
 }
 .footer {
   text-align: center;
-  align-self: stretch;
-  align-items: stretch;
   color: #444;
   background-color: HSL(48, 100%, 70%);
   font-size: calc(6px + 1.3vw);
@@ -205,7 +199,7 @@ textarea {
 button {
   border-color: DimGrey;
   background-color: white;
-  height: calc(8px + 4vw) !important;
+  height: calc(8px + 4vw);
   width: 40%;
   font-size: 1.3vw;
 }
