@@ -3,8 +3,8 @@
     text-decoration: none;
     text-transform: uppercase;
     color: hsl(180, 90%, 15%);
-    margin: 1vw;
-    padding: 0 1vw 0 1vw;
+    margin: .9vw;
+    padding: 0 .9vw 0 .9vw;
   }
   body {
     margin: .3vw;
@@ -124,7 +124,7 @@
   background-color: white;
   font-weight: bold;
   font-style: normal;
-  font-size: calc(14px + 1.6vw);
+  font-size: calc(12px + 1.6vw);
   text-align: center;
 }
 .navbar a:hover:not(.active) {
@@ -163,7 +163,6 @@
 }
 .sidebar {
   background-color: white;
-  /* background-color: hsl(180, 90%, 19%); */
   color: #fff;
   display: run-in;
   font-size: 1.8vw !important;
@@ -186,7 +185,7 @@
   align-items: stretch;
   color: #444;
   background-color: HSL(48, 100%, 70%);
-  font-size: calc(7px + 1.3vw);
+  font-size: calc(6px + 1.3vw);
   font-family: sans-serif;
 }
 .equityLogo {
@@ -204,9 +203,10 @@ textarea {
   font-size: 1.5vw;
 }
 button {
-  height: 3.7vw !important;
+  border-color: black;
+  height: calc(8px + 4vw) !important;
   width: 40%;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
 }
 #git {
   max-width: 2vw;
