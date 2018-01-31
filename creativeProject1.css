@@ -170,8 +170,8 @@
 }
 .content {
   background: grey;
-  padding: 4vw;
-  font-size: calc(9px + 1.5vw);
+  padding: 1.6vw;
+  font-size: calc(9px + 1.2vw);
 }
 .sidebar2 {
   background-color: white;
@@ -196,16 +196,15 @@
   font-family: serif;
 }
 textarea {
-  padding: 1.5vw 0vw 0vw 2.9vw;
-  /* border: 10vw !important; */
+  padding: 1vw 0vw 0vw 2.9vw;
   margin: 0;
-  height: 4%;
+  height: 3.6%;
   width: 80%;
   resize: none;
   font-size: 1.5vw;
 }
 button {
-  height: 5vw !important;
+  height: 3.7vw !important;
   width: 40%;
   border-radius: 1vw;
   font-size: 1.5vw;
